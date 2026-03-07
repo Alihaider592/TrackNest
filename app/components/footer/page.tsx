@@ -10,7 +10,6 @@ import {
   ExternalLink,
 } from "lucide-react";
 
-// Special Effect Link Component
 const socials = [
   { icon: Twitter, name: "Twitter" },
   { icon: Github, name: "GitHub" },
