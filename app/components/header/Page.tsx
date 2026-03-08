@@ -26,18 +26,17 @@ export default function Navbar() {
   ];
 
   return (
-    <nav 
+    <nav
       className={`fixed top-0 w-full z-[100] transition-all duration-300 border-b ${
-        scrolled 
-          ? "bg-white/70 dark:bg-slate-950/70 backdrop-blur-xl border-slate-200 dark:border-slate-800 py-3" 
+        scrolled
+          ? "bg-white/70 dark:bg-slate-950/70 backdrop-blur-xl border-slate-200 dark:border-slate-800 py-3"
           : "bg-transparent border-transparent py-5"
       }`}
     >
       <div className="max-w-7xl mx-auto flex items-center justify-between px-6">
-        
         {/* Logo Section */}
         <Link href="/" className="flex items-center gap-2 group">
-          <motion.div 
+          <motion.div
             whileHover={{ rotate: 10, scale: 1.1 }}
             className="h-9 w-9 bg-indigo-600 rounded-xl flex items-center justify-center shadow-lg shadow-indigo-500/30 transition-shadow group-hover:shadow-indigo-500/50"
           >
