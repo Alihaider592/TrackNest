@@ -1,5 +1,4 @@
 "use client";
-
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
@@ -19,12 +18,12 @@ export default function Navbar() {
   }, []);
 
   const navLinks = [
-    { name: "Features", href: "#features" },
-    { name: "Solutions", href: "#solutions" },
-    { name: "Pricing", href: "#pricing" },
-    { name: "Resources", href: "#resources" },
-  ];
-
+    {name: "Home", href: "/" },
+  { name: "Features", href: "/features" },
+  { name: "Solutions", href: "#solutions" },
+  { name: "Pricing", href: "#pricing" },
+  { name: "Resources", href: "#resources" },
+];
   return (
     <nav
       className={`fixed top-0 w-full z-[100] transition-all duration-300 border-b ${
