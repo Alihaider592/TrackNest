@@ -1,13 +1,19 @@
 "use client";
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
-import { motion, AnimatePresence, useScroll, useMotionValue, useSpring } from "framer-motion";
+import {
+  motion,
+  AnimatePresence,
+  useScroll,
+  useMotionValue,
+  useSpring,
+} from "framer-motion";
 import { Menu, X, ChevronRight, Sparkles } from "lucide-react";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
-  
+
   // Spotlight Position Logic
   const mouseX = useMotionValue(0);
   const mouseY = useMotionValue(0);
@@ -37,7 +43,7 @@ export default function Navbar() {
     { name: "Features", href: "/features" },
     { name: "Solutions", href: "/solutions" },
     { name: "Pricing", href: "/pricing" },
-    { name: "Resources", href: "#resources" },
+    { name: "Resources", href: "/resources" },
   ];
 
   return (
@@ -48,7 +54,8 @@ export default function Navbar() {
         style={{
           background: useTransform(
             [spotlightX, spotlightY],
-            ([x, y]) => `radial-gradient(600px circle at ${x}px ${y}px, rgba(99, 102, 241, 0.06), transparent 80%)`
+            ([x, y]) =>
+              `radial-gradient(600px circle at ${x}px ${y}px, rgba(99, 102, 241, 0.06), transparent 80%)`,
           ),
         }}
       />
@@ -73,7 +80,9 @@ export default function Navbar() {
               <span className="text-xl font-bold tracking-tighter text-slate-900 dark:text-white leading-none">
                 TrackNest
               </span>
-              <span className="text-[10px] font-medium text-indigo-500 uppercase tracking-widest mt-1">Management</span>
+              <span className="text-[10px] font-medium text-indigo-500 uppercase tracking-widest mt-1">
+                Management
+              </span>
             </div>
           </Link>
 
@@ -94,7 +103,7 @@ export default function Navbar() {
 
           {/* Auth Buttons */}
           <div className="hidden md:flex items-center gap-3">
-             <Link
+            <Link
               href="/login"
               className="px-5 py-2.5 text-sm font-semibold text-slate-600 dark:text-slate-300 hover:bg-slate-100 dark:hover:bg-white/5 rounded-xl transition-all"
             >
@@ -113,7 +122,10 @@ export default function Navbar() {
 
           {/* Mobile Button stays the same */}
           <div className="md:hidden">
-            <button onClick={() => setIsOpen(!isOpen)} className="p-2 text-slate-600 dark:text-slate-300">
+            <button
+              onClick={() => setIsOpen(!isOpen)}
+              className="p-2 text-slate-600 dark:text-slate-300"
+            >
               {isOpen ? <X /> : <Menu />}
             </button>
           </div>
