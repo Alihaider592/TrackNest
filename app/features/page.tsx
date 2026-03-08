@@ -25,39 +25,45 @@ type Feature = {
 const features: Feature[] = [
   {
     title: "Real-time Analytics",
-    description: "Monitor team performance with live data streaming directly to your command center. Sub-second latency for critical decision making.",
+    description:
+      "Monitor team and project performance with live data streaming. Sub-second insights for critical decision-making across any organization.",
     icon: <LayoutDashboard className="w-6 h-6" />,
     className: "md:col-span-2 md:row-span-2",
     color: "indigo",
   },
   {
     title: "Instant Automation",
-    description: "Deploy If-This-Then-That workflows in seconds.",
+    description:
+      "Automate repetitive workflows and processes in seconds, freeing your teams to focus on strategic tasks.",
     icon: <Zap className="w-6 h-6" />,
     color: "amber",
   },
   {
     title: "Global Infrastructure",
-    description: "Multi-region deployment with 99.99% uptime.",
+    description:
+      "Deploy resources across multiple regions with 99.99% uptime for global teams and projects.",
     icon: <Globe className="w-6 h-6" />,
     color: "emerald",
   },
   {
     title: "Advanced Security",
-    description: "Enterprise-grade AES-256 encryption and SOC2 Type II compliance standards built into every layer of our stack.",
+    description:
+      "Enterprise-grade AES-256 encryption, SOC2 Type II compliance, and robust access control built into every layer of your stack.",
     icon: <ShieldCheck className="w-6 h-6" />,
     className: "md:col-span-2",
     color: "rose",
   },
   {
-    title: "Team Sync",
-    description: "Live cursors and shared workspaces.",
+    title: "Team Collaboration",
+    description:
+      "Real-time collaboration with live cursors, shared workspaces, and threaded comments for seamless team alignment.",
     icon: <Users className="w-6 h-6" />,
     color: "sky",
   },
   {
     title: "Modular Scaling",
-    description: "Grow from 10 to 10,000 users without friction.",
+    description:
+      "Easily scale from small teams to thousands of users without friction, adapting to any business or project size.",
     icon: <Layers className="w-6 h-6" />,
     color: "orange",
   },
