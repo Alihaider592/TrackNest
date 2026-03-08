@@ -4,6 +4,7 @@ import "./globals.css";
 
 import Navbar from "./components/header/Page";
 import Footer from "./components/footer/page";
+import GlobalSpotlight from "./components/GlobalSpotlight/GlobalSpotlight";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -16,8 +17,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Student Management System",
-  description: "Modern student management platform",
+  title: "TrackNest | Student Management System",
+  description: "Modern student management platform built for efficiency.",
 };
 
 export default function RootLayout({
@@ -26,7 +27,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
+    <html lang="en" suppressHydrationWarning className="dark">
       <body
         className={`
         ${geistSans.variable} 
@@ -38,13 +39,19 @@ export default function RootLayout({
         dark:text-slate-100
         transition-colors
         duration-300
+        relative
       `}
       >
-        {/* Navbar */}
+        {/* Site-wide background effects */}
+        <GlobalSpotlight />
+
+        {/* Navbar - Kept at high z-index via its own component logic */}
         <Navbar />
 
-        {/* Page Content */}
-        <main className="min-h-screen">{children}</main>
+        {/* Page Content - Relative z-10 ensures it sits above the spotlight grid */}
+        <main className="min-h-screen relative z-10">
+          {children}
+        </main>
 
         {/* Footer */}
         <Footer />
