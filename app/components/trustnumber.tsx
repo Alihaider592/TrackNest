@@ -38,7 +38,8 @@ export default function TrustNumber() {
   ];
 
   return (
-    <section className="py-16 border-y border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 backdrop-blur-md">
+    <section className="p
+// 1. Defined a strict interface for the Counter propsy-16 border-y border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 backdrop-blur-md">
       <div className="max-w-7xl mx-auto px-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
           {stats.map((stat, i) => (
