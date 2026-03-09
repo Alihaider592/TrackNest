@@ -14,6 +14,7 @@ import {
   Briefcase,
   Layers
 } from "lucide-react";
+import TrustNumber from "./components/trustnumber";
 
 // Animation Variants
 const fadeIn = {
@@ -282,6 +283,7 @@ export default function Home() {
           </div>
         </motion.div>
       </section>
+      <TrustNumber />
     </main>
   );
 }
