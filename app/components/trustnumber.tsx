@@ -2,12 +2,9 @@
 
 import { useEffect, useRef } from "react";
 import { motion, useInView, useSpring, useTransform } from "framer-motion";
-
-// 1. Defined a strict interface for the Counter props
 interface CounterProps {
   value: number;
 }
-
 function Counter({ value }: CounterProps) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
