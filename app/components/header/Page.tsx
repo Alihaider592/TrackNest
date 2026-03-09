@@ -114,7 +114,7 @@ export default function Navbar() {
                 href="/register"
                 className="px-6 py-2.5 bg-indigo-600 text-white text-sm font-bold rounded-xl shadow-[0_0_20px_rgba(79,70,229,0.3)] hover:shadow-indigo-500/50 transition-all flex items-center gap-2"
               >
-                Launch App
+                Request to Join
                 <ChevronRight className="w-4 h-4" />
               </Link>
             </motion.div>
