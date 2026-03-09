@@ -8,15 +8,15 @@ interface CounterProps {
 function Counter({ value }: CounterProps) {
   const ref = useRef(null);
   const inView = useInView(ref, { once: true });
-  
+
   const spring = useSpring(0, {
     mass: 1,
     stiffness: 100,
     damping: 30,
   });
 
-  const display = useTransform(spring, (current) => 
-    Math.floor(current).toLocaleString()
+  const display = useTransform(spring, (current) =>
+    Math.floor(current).toLocaleString(),
   );
 
   useEffect(() => {
@@ -38,9 +38,11 @@ export default function TrustNumber() {
   ];
 
   return (
-    <section className="p
-// 1. Defined a strict interface for the Counter propsy-16 border-y border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 backdrop-blur-md">
-      <div className="max-w-7xl mx-auto px-6">
+    <section
+      className="p
+// 1. Defined a strict interface for the Counter propsy-16 border-y border-slate-200 dark:border-slate-800 bg-white/50 dark:bg-slate-900/50 backdrop-blur-md"
+    >
+      <div className="max-w-7xl mx-auto px-6 my-6">
         <div className="grid grid-cols-2 md:grid-cols-4 gap-12">
           {stats.map((stat, i) => (
             <motion.div
@@ -62,12 +64,12 @@ export default function TrustNumber() {
                   <span>{stat.value}</span>
                 )}
               </div>
-              
+
               <div className="text-[10px] md:text-xs uppercase tracking-[0.2em] font-bold text-slate-500 dark:text-slate-400 mt-2 group-hover:text-indigo-500 transition-colors">
                 {stat.label}
               </div>
 
-              <motion.div 
+              <motion.div
                 className="absolute -bottom-2 left-1/2 -translate-x-1/2 h-0.5 bg-indigo-500/30 rounded-full"
                 initial={{ width: 0 }}
                 whileInView={{ width: "40px" }}
