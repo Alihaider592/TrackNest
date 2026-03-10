@@ -9,7 +9,6 @@ import {
   Mail,
   ShieldCheck,
   ChevronRight,
-  ArrowUpLeft,
   Users2,
   MessageSquare,
 } from "lucide-react";
