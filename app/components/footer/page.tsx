@@ -44,7 +44,7 @@ export default function Footer() {
         { name: "Features", href: "/features" },
         { name: "Solutions", href: "/solutions" },
         { name: "Pricing", href: "/pricing" },
-        { name: "Releases", href: "/releases" },
+        { name: "Releases", href: "/realses" },
       ],
     },
     {
