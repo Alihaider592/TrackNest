@@ -38,33 +38,33 @@ export default function Footer() {
   const currentYear = new Date().getFullYear();
 
   const footerSections = [
-  {
-    title: "Product",
-    links: [
-      { name: "Features", href: "/features" },
-      { name: "Solutions", href: "/solutions" },
-      { name: "Pricing", href: "/pricing" },
-      { name: "Releases", href: "/releases" },
-    ],
-  },
-  {
-    title: "Company",
-    links: [
-      { name: "About Us", href: "/about" },
-      { name: "Careers", href: "/careers" },
-      { name: "Contact", href: "/contact" },
-      { name: "Blog", href: "/blog" },
-    ],
-  },
-  {
-    title: "Legal",
-    links: [
-      { name: "Privacy Policy", href: "/privacy" },
-      { name: "Terms of Service", href: "/terms" },
-      { name: "Cookie Policy", href: "/cookies" },
-    ],
-  },
-];
+    {
+      title: "Product",
+      links: [
+        { name: "Features", href: "/features" },
+        { name: "Solutions", href: "/solutions" },
+        { name: "Pricing", href: "/pricing" },
+        { name: "Releases", href: "/releases" },
+      ],
+    },
+    {
+      title: "Company",
+      links: [
+        { name: "About Us", href: "/about" },
+        { name: "Careers", href: "/careers" },
+        { name: "Contact", href: "/contact" },
+        { name: "Blog", href: "/blog" },
+      ],
+    },
+    {
+      title: "Legal",
+      links: [
+        { name: "Privacy Policy", href: "/privacy" },
+        { name: "Terms of Service", href: "/terms" },
+        { name: "Cookie Policy", href: "/cookies" },
+      ],
+    },
+  ];
 
   return (
     <footer className="relative bg-white dark:bg-[#020617] pt-24 pb-12 px-6 border-t border-slate-200 dark:border-slate-800 transition-colors duration-300 overflow-hidden">
@@ -173,32 +173,30 @@ export default function Footer() {
 
           {/* Links Columns */}
           <div className="md:col-span-5 grid grid-cols-2 sm:grid-cols-3 gap-8">
-  {footerSections.map((section, idx) => (
-    <motion.div
-      key={section.title}
-      initial={{ opacity: 0, y: 20 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      transition={{ delay: idx * 0.1 }}
-    >
-      <h4 className="font-black text-slate-900 dark:text-white mb-6 uppercase text-[10px] tracking-[0.2em]">
-        {section.title}
-      </h4>
-      <ul className="space-y-4">
-        {section.links.map((link) => (
-          <li key={link.name}>
-            {/* We change href="#" to link.href 
+            {footerSections.map((section, idx) => (
+              <motion.div
+                key={section.title}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: idx * 0.1 }}
+              >
+                <h4 className="font-black text-slate-900 dark:text-white mb-6 uppercase text-[10px] tracking-[0.2em]">
+                  {section.title}
+                </h4>
+                <ul className="space-y-4">
+                  {section.links.map((link) => (
+                    <li key={link.name}>
+                      {/* We change href="#" to link.href 
                and {link} to {link.name} 
             */}
-            <AnimatedLink href={link.href}>
-              {link.name}
-            </AnimatedLink>
-          </li>
-        ))}
-      </ul>
-    </motion.div>
-  ))}
-</div>
+                      <AnimatedLink href={link.href}>{link.name}</AnimatedLink>
+                    </li>
+                  ))}
+                </ul>
+              </motion.div>
+            ))}
+          </div>
 
           {/* Newsletter Column */}
           <motion.div
