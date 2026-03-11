@@ -25,7 +25,7 @@ const releases = [
 
 const ReleasesPage = () => {
   return (
-    <div className="min-h-screen bg-white dark:bg-[#030303] py-24 px-6 relative overflow-hidden">
+    <div className="min-h-screen bg-slate-50 dark:bg-[#020617] text-white flex flex-col p-6 md:p-12 overflow-hidden selection:bg-indigo-500/30">
       {/* Background Decorative Blobs to fill "Empty" space */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-indigo-500/10 blur-[120px] rounded-full" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-purple-500/10 blur-[120px] rounded-full" />
