@@ -51,7 +51,7 @@ export default function Footer() {
       title: "Company",
       links: [
         { name: "About Us", href: "/abouteus" },
-        { name: "Careers", href: "/careers" },
+        { name: "Careers", href: "/CareersSection.tsx" },
         { name: "Contact", href: "/contact" },
         { name: "Blog", href: "/blog" },
       ],
