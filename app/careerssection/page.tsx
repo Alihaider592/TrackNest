@@ -4,7 +4,7 @@ import { Users, ClipboardList } from 'lucide-react';
 export default function CareersSection() {
   return (
     <main 
-      className="min-h-screen dark:bg-[#020617] text-gray-100 py-16 px-8 flex items-center justify-center relative"
+      className="min-h-screen dark:bg-[#020617] text-gray-100 py-26 px-8 flex items-center justify-center relative"
       style={{
         backgroundImage: `
           linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
@@ -18,8 +18,8 @@ export default function CareersSection() {
 
       <div className="max-w-6xl w-full relative z-10">
         
-        {/* Header Section */}
-        <header className="mb-16 items-center justify-center relative max-w-xl">
+        {/* Header Section (Centered) */}
+        <header className="mb-16 flex flex-col items-center text-center max-w-2xl mx-auto relative">
           {/* Badge mimicking the 'SCALABLE PRICING' design */}
           <div className="inline-flex items-center gap-1.5 bg-indigo-500/10 border border-indigo-500/30 rounded-full px-3 py-1 mb-4">
             <span className="text-indigo-400 text-[10px]">⚡</span>
