@@ -27,16 +27,17 @@ export default function CareersSection() {
               Scalable Infrastructure
             </span>
           </div>
-          
-          <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-2">
+          <div>
+          <h1 className="text-5xl md:text-7xl font-extrabold text-white tracking-tight mb-2">
             Plans that grow
           </h1>
-          <h1 className="text-4xl md:text-5xl font-extrabold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent tracking-tight mb-4">
+          <h1 className="text-5xl md:text-6xl font-extrabold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent tracking-tight mb-4 ">
             with your institution.
           </h1>
-          <p className="text-gray-400 text-lg leading-relaxed">
+          <p className="text-gray-400 text-lg md:text-xl leading-relaxed">
             We replace fragmented tools with high-frequency business growth infrastructure.
           </p>
+          </div>
         </header>
 
         {/* Features Grid */}
