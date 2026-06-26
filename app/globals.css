@@ -1,2 +1,18 @@
 @import "tailwindcss";
 
+@keyframes marquee {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(-50%);
+  }
+}
+
+.animate-pure-css-marquee {
+  animation: marquee 25s linear infinite;
+}
+
+.animate-pure-css-marquee:hover {
+  animation-play-state: paused;
+}

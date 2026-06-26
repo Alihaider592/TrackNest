@@ -51,7 +51,10 @@ export default function Footer() {
       title: "Company",
       links: [
         { name: "About Us", href: "/abouteus" },
+ privacypolicy
+        { name: "Careers", href: "/careerssection" },
         { name: "Careers", href: "/careers" },
+master
         { name: "Contact", href: "/contact" },
         { name: "Blog", href: "/blog" },
       ],
@@ -59,7 +62,9 @@ export default function Footer() {
     {
       title: "Legal",
       links: [
-        { name: "Privacy Policy", href: "/privacy" },
+ privacypolicy
+        { name: "Privacy Policy", href: "/privacypolicy" },
+        { name: "Privacy Policy", href: "/privacy" }, master
         { name: "Terms of Service", href: "/terms" },
         { name: "Cookie Policy", href: "/cookies" },
       ],
