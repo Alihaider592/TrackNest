@@ -51,10 +51,9 @@ export default function Footer() {
       title: "Company",
       links: [
         { name: "About Us", href: "/abouteus" },
- privacypolicy
+        { name: "Careers", href: "/careerssection" },
         { name: "Careers", href: "/careerssection" },
         { name: "Careers", href: "/careers" },
-master
         { name: "Contact", href: "/contact" },
         { name: "Blog", href: "/blog" },
       ],

@@ -95,7 +95,7 @@ const FeatureCard = ({ feature, index }: { feature: Feature; index: number }) =>
       className={`group relative overflow-hidden rounded-3xl border border-slate-800 bg-slate-900/50 p-8 transition-colors hover:bg-slate-900 ${feature.className || ""}`}
     >
       {/* Dynamic Spotlight Background */}
-      <div
+      <div 
         className="pointer-events-none absolute -inset-px transition-opacity duration-300"
         style={{
           opacity: isHovered ? 1 : 0,

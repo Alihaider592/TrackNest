@@ -6,7 +6,7 @@ import { Zap, Globe, Cpu, Users, ArrowRight, ShieldCheck, Code2 } from "lucide-r
 
 export default function AboutPage() {
   return (
-    <div className="min-h-screen bg-indigo-500/10 border border-indigo-500/20 text-indigo-400 font-sans selection:bg-indigo-500/30 overflow-hidden">
+    <div className="min-h-screen bg-indigo-900/10 border border-indigo-500/20 text-indigo-800 font-sans selection:bg-indigo-800 overflow-hidden">
       
       {/* THEME BACKGROUND: Same glow and grid from your Pricing Page */}
       <div className="fixed inset-0 pointer-events-none">
